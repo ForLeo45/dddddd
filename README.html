@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 해당 웹페이지는 아직 기획안입니다. -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31018 이승우 웹사이트 설계</title>
+    <style>
+        /* CSS는 외부로 추출될 예정 */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #6A0DAD; 
+            color: white; 
+            text-align: center; 
+            padding: 20px 0;
+        }
+        
+        section {
+            background-color: #7c2f53;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #808080;
+            color: white;
+            text-align: right;
+            padding: 20px 0;
+        }
+        .redirecter {
+            background-color: indigo;
+            color: white;
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .redirecter:hover {
+            background-color: paleturquoise;
+            color: blue;
+            width: 220px;
+            height: 70px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GOTD</h1>
+        <input type="button" value="Main Menu" class="redirecter" onclick="main_menu()">
+    </header>
+    
+    <section>
+        <div>
+            <h1>GOTD</h1>
+            <h3>Games Of The Decade</h3>
+            <h5>Made By 이승우</h5>
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Test" class="redirecter" onclick="game1()">
+        </div>
+    </section>
+    
+    <footer>
+        <div>
+            문의 :
+        </div>
+    </footer>
+
+    <script>
+        function main_menu() {
+            window.location.href="https://www.google.com" /*this is temporary test link*/
+        }
+
+        function game1() {
+            window.location.href="https://www.youtube.com" /*this is temporary test link*/
+        }
+    </script>
+</body>
+</html>
